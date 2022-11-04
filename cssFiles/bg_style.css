@@ -1,3 +1,16 @@
+@font-face {
+    font-family: ADAM;
+    src: url("../fonts/ADAM.CG\ PRO.otf")
+}
+@font-face {
+    font-family: AFY;
+    src: url("../fonts/Affectionately\ Yours\ -\ TTF.ttf")
+}
+@font-face {
+    font-family: OET;
+    src: url("../fonts/OldEnglishTextMT2.ttf")
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +20,11 @@
 
 body {
     background-color: rgb(231, 231, 255);
-    background: url(../images/bgimg1.png);
+    background: url(../images/bgimg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center center;
 }
 
 /* #holder {
@@ -31,7 +45,7 @@ main {
 
 .leftContainer {
     height: 100vh;
-    width: 27%;
+    width: 34%;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -41,7 +55,7 @@ main {
 }
 
 .rightContainer {
-    width: 73%;
+    width: 66%;
     margin-left: 27%;
     display: flex;
     flex-direction: column;
@@ -69,55 +83,46 @@ main {
 }
 
 h1.titleText {
-    position: absolute;
-    top: 5vh;
-    left: 4vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 75px;
-    letter-spacing: 5px;
+    /* position: absolute; */
+    font-family: 'ADAM';
+    font-size: 70px;
+    letter-spacing: 3px;
     line-height: 75px;
     /* background: url('https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg'); */
-    background: url(../images/Page4.svg);
+    /* background: url(../images/Page4.svg); */
     /* background-size: auto 200%; */
+    background-color: rgb(255, 0, 98);
     background-size: contain;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shine 8s linear infinite;
 }
 
-.logos {
-    width: 100%;
+.twoLogos, .topLine{
+    position: fixed;
+}
+
+.twoLogos img{
+    width: 130px;
+}
+
+.topLine {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: -30px;
-    bottom: -40px;
-    margin-bottom: 25px;
+    width: 100%;
 }
 
-.coepLogo {
-    width: 220px;
-    height: 220px;
-}
-
-.impressLogo {
-    width: 135px;
-    height: 170px;
-    border-left: 2px solid rgb(112, 112, 112);
-    padding-left: 40px;
-}
-
-@keyframes shine {
-    from {
-        background-position: center 0;
-    }
-
-    to {
-        background-position: center 200%;
-    }
+.topLine p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: OET;
+    font-size: 25px;
+    width: 65%;
+    padding-top: 15px;
 }
 
 .leftContainer a {
@@ -125,49 +130,25 @@ h1.titleText {
 }
 
 .leftContainer ul {
-    width: min-content;
+    /* width: min-content; */
     list-style: none;
-    padding-left: 35px;
     position: relative;
-    top: -3vh;
-}
-
-.leftContainer ul:after {
-    content: "";
-    position: absolute;
-    width: 3px;
-    height: 92%;
-    left: 0px;
-    top: 4%;
-    background: white;
-}
-
-.leftContainer ul a li::before {
-    content: "";
-    position: absolute;
-    background: black;
-    width: 12px;
-    height: 12px;
-    left: -44px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    border: 3px solid white;
-    z-index: 1;
+    margin-top: 80px;
 }
 
 .leftContainer ul a li.active {
-    font-size: 25px;
+    color: rgb(255, 0, 0);
 }
 
 .leftContainer ul li {
     position: relative;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
-    font-weight: 700;
+    font-family: 'AFY';
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
     padding: 5px;
-    margin: 25px 2px;
+    margin: 15px 2px;
     cursor: pointer;
 }
 
@@ -208,13 +189,14 @@ h1.titleText {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* background: repeating-linear-gradient(135deg, #f6d900, red 1px, #d4cd96); */
+    background: repeating-linear-gradient(135deg, #5873fe, rgba(255, 0, 0, 0.707) 0.01px, #871cde);
     height: 375px;
     width: 280px;
     margin: 40px 25px 30px 20px;
-    background: url(../images/Page4.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background: url(../images/Page4.svg); */
+    /* background: linear-gradient(bottom, #5873fe, #871cde); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
     border: 2px solid black;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.7s ease;
@@ -238,7 +220,7 @@ h1.titleText {
     /* border-radius: 15px 15px 0 0; */
     width: 100%;
     height: 65%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .cardContent div {
@@ -339,31 +321,64 @@ h1.titleText {
 }
 
 /* responsive */
-@media (max-width: 1250px) {
+@media (max-width: 1380px) {
     h1.titleText {
-        position: absolute;
-        top: 2vh;
-        left: 2vw;
+        font-size: 65px;
     }
 }
-
-@media (max-width: 1050px) {
+@media (max-width: 1000px) {
     h1.titleText {
-        position: absolute;
-        top: 2vh;
-        left: 1vw;
-        font-size: 70px;
+        font-size: 62px;
+        letter-spacing: 2px;
     }
 }
 
 @media (max-width: 950px) {
+    .twoLogos{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 7%;
+    }
+    .topLine{
+        width: 100%;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .twoLogos img{
+        width: 200px;
+    }
+    
+    .topLine {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .topLine p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: OET;
+        font-size: 24px;
+        width: 80%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
     main {
         display: flex;
         flex-direction: column;
     }
 
     .leftContainer {
-        height: 100vh;
+        height: 70vh;
         width: 100%;
         position: relative;
     }
@@ -375,20 +390,25 @@ h1.titleText {
     }
 
     h1.titleText {
-        position: absolute;
-        top: 6vh;
         left: 0;
         width: 100%;
+        margin-top: 70px;
+        letter-spacing: 1px;
+        font-size: 50px;
         text-align: center;
     }
 
     .leftContainer ul {
         top: -8vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .leftContainer ul li {
         font-size: 22px;
-        margin: 20px 2px;
+        margin: 10px 2px;
     }
 
     .leftContainer ul a li.active {
@@ -414,26 +434,27 @@ h1.titleText {
         height: 390px;
         width: 280px;
     }
-
-    .logos {
-        bottom: 40px;
-    }
-
-    .coepLogo {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .impressLogo {
-        width: 127px;
-        height: 155px;
-    }
-
 }
 
 @media (max-width: 500px) {
+    .topLine p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: OET;
+        font-size: 22px;
+        width: 80%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .twoLogos img{
+        width: 170px;
+    }
+
     h1.titleText {
-        font-size: 65px;
+        font-size: 50px;
     }
 }
 
@@ -450,8 +471,8 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #2b0606;
-    border: 1px solid #210e0e;
+    background-color: #230643;
+    border: 1px solid #4819a0;
 }
 
 /* footer */
@@ -461,7 +482,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 70px;
     list-style: circle;
     color: white;
-    border-top: 3px solid rgb(158, 155, 155);
+    border-top: 3px solid rgb(211, 208, 208);
     display: flex;
 }
 
