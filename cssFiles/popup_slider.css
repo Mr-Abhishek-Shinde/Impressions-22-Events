@@ -315,8 +315,8 @@
         text-align: center;
         position: relative;
         left: 0;
-        top: 15px;
-        font-size: 40px;
+        top: 20px;
+        font-size: 34px;
     }
 
     .prev,
@@ -394,7 +394,7 @@
 
     .slider .box .details h1 {
         font-size: 32px;
-        margin-top: 20px;
+        margin-top: 22px;
         margin-bottom: 20px;
     }
 

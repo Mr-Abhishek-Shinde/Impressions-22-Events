@@ -197,7 +197,7 @@ h1.titleText {
     /* background: linear-gradient(bottom, #5873fe, #871cde); */
     /* background-size: cover;
     background-repeat: no-repeat; */
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.7s ease;
     padding: 10px;
