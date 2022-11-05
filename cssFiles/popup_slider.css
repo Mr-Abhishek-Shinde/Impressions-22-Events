@@ -191,12 +191,7 @@
     top: 25px;
     font-size: 40px;
     font-family: 'ADAM';
-    color: transparent;
-    background: url(../images/Page4.svg);
-    background-size: contain;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
 }
 
 @media (max-width: 1250px) {

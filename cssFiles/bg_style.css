@@ -308,6 +308,11 @@ h1.titleText {
 }
 
 #popup a {
+    color: #7bebf6;
+    font-size: 16.5px;
+    padding: 0px 4px;
+}
+#popup .illustration a {
     text-align: center;
     font-size: 20px;
     font-weight: 700;
