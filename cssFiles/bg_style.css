@@ -183,13 +183,12 @@ h1.titleText {
     margin-bottom: 25px;
 }
 
-
 .card {
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 40px 25px 30px 20px;
+    margin: 35px 25px 25px 20px;
 }
 
 .cardContent:hover {
@@ -237,7 +236,8 @@ h1.titleText {
 #music.active,
 #anc.active,
 #blur1.active,
-#blur2.active {
+#blur2.active,
+#blur0.active {
     filter: blur(15px);
     user-select: none;
     pointer-events: none;
@@ -647,7 +647,7 @@ body.popupActive {
 
 
 .card__side div {
-	font-size: 23px;
+	font-size: 21px;
 	position: relative;
 	padding: 5px 15px;
 	text-decoration: none;

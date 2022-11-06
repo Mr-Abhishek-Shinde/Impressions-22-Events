@@ -2,20 +2,23 @@
 <html lang="en">
 
 <html>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Impressions is a Cultural Festival of College of Engineering, Pune.">
-    <meta name="keywords" content="impressions 22, impressions, Impressions, Impression, cultural fest, coep impressions, coep, pune, engineering, COEP, coep tech">
-    <script src="jsFiles/jq.js"></script>
-    <title>Events | Impressions'22 | COEP Tech</title>
-    <link rel="icon" href="images/icon_impressions.ico" type="image/x-icon">
-    <link rel="stylesheet" href="cssFiles/preloader.css">
-    <link rel="stylesheet" href="cssFiles/bg_style.css">
-    <link rel="stylesheet" href="cssFiles/goToTop.css">
-    <link rel="stylesheet" href="cssFiles/popup_slider.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Impressions is a Cultural Festival of College of Engineering, Pune.">
+<meta name="keywords"
+    content="impressions 22, impressions, Impressions, Impression, cultural fest, coep impressions, coep, pune, engineering, COEP, coep tech">
+<script src="jsFiles/jq.js"></script>
+<title>Events | Impressions'22 | COEP Tech</title>
+<link rel="icon" href="images/icon_impressions.ico" type="image/x-icon">
+<link rel="stylesheet" href="cssFiles/preloader.css">
+<link rel="stylesheet" href="cssFiles/bg_style.css">
+<link rel="stylesheet" href="cssFiles/goToTop.css">
+<link rel="stylesheet" href="cssFiles/popup_slider.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </html>
+
 <body>
 
     <div id="holder"></div>
@@ -42,7 +45,7 @@
         <div class="twoLogos">
             <img src="images/coep and foot logo.png" alt="">
         </div>
-        <div class="topLine">
+        <div class="topLine" id="blur0">
             <p>College of Engineering Pune Technological University Presents Impressions'22</p>
         </div>
         <div class="top" id="scrollbtn" onclick="scrollToTop()">
@@ -50,7 +53,7 @@
         </div>
         <div class="leftContainer" id="blur1">
             <h1 class="titleText">MODULES</h1>
-            
+
             <div class="modules">
                 <nav>
                     <ul>
@@ -150,24 +153,48 @@
                 <h1 class="modTitle">The Drama Module</h1>
                 <div class="drama" id="drama">
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/drama/limelight.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Limelight</h2>
-                            <div onclick="togglePopup(this.id)" id="LL">Read More</div>
+                            <h4>It is an original monologue-specific acting competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="LL">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/drama/limelight.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/drama/artiskit.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Artiskit</h2>
-                            <div onclick="togglePopup(this.id)" id="AS">Read More</div>
+                            <h4>It's an impromptu group acting competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="AS">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/drama/artiskit.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/drama/suno-suno.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Suno Suno</h2>
-                            <div onclick="togglePopup(this.id)" id="SS">Read More</div>
+                            <h4>It's a street play competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="SS">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/drama/suno-suno.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                 </div>
@@ -178,38 +205,78 @@
                 <h1 class="modTitle">The Arts-and-Crafts Module</h1>
                 <div class="anc" id="anc">
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/anc/doodly-do.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Doodly Doo</h2>
-                            <div onclick="togglePopup(this.id)" id="DD">Read More</div>
+                            <h4>It is a doodling competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="DD">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/anc/doodly-do.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/anc/cirkala.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Cirकला</h2>
-                            <div onclick="togglePopup(this.id)" id="CK">Read More</div>
+                            <h4>It is a mandala art competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="CK">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/anc/cirkala.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/anc/game-of-shades.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Game of Shades</h2>
-                            <div onclick="togglePopup(this.id)" id="GOS">Read More</div>
+                            <h4>It is a pencil, graphite, and charcoal sketching competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="GOS">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/anc/game-of-shades.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/anc/color-splash.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Color Splash</h2>
-                            <div onclick="togglePopup(this.id)" id="CS">Read More</div>
+                            <h4>It is an open-medium painting competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="CS">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/anc/color-splash.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/anc/graphix.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Graphix</h2>
-                            <div onclick="togglePopup(this.id)" id="GP">Read More</div>
+                            <h4>It's a digital art competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="GP">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/anc/graphix.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                 </div>
@@ -220,17 +287,33 @@
                 <h1 class="modTitle">The Camera Module</h1>
                 <div class="camera" id="camera">
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/camera/box-office.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Box Office</h2>
-                            <div onclick="togglePopup(this.id)" id="BO">Read More</div>
+                            <h4>It is a short film-making competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="BO">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/camera/box-office.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/camera/lens-art.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Lens Art</h2>
-                            <div onclick="togglePopup(this.id)" id="LA">Read More</div>
+                            <h4>It's a photography competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="LA">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/camera/lens-art.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                 </div>
@@ -241,38 +324,78 @@
                 <h1 class="modTitle">The Music Module</h1>
                 <div class="music" id="music">
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/music/battle-of-djs.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Battle of DJ's</h2>
-                            <div onclick="togglePopup(this.id)" id="BOJ">Read More</div>
+                            <h4>It's a DJ competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="BOJ">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/music/battle-of-djs.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/music/saavani.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Saavani</h2>
-                            <div onclick="togglePopup(this.id)" id="SVN">Read More</div>
+                            <h4>It's a singing competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="SVN">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/music/saavani.pnG); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/music/stay-tuned.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Stay Tuned</h2>
-                            <div onclick="togglePopup(this.id)" id="ST">Read More</div>
+                            <h4>It's a musical instrument-playing competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="ST">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/music/stay-tuned.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/music/poona-05.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Poona-05</h2>
-                            <div onclick="togglePopup(this.id)" id="PN">Read More</div>
+                            <h4>It's a rap competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="PN">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/music/poona-05.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/music/high-current.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>High Current</h2>
-                            <div onclick="togglePopup(this.id)" id="HC">Read More</div>
+                            <h4>This is a battle of bands</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="HC">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/music/high-current.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                 </div>
@@ -283,38 +406,78 @@
                 <h1 class="modTitle">The Shoutout Module</h1>
                 <div class="shoutout" id="shoutout">
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/shoutout/andaaz-e-bayaan.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Andaaz-E-Bayaan</h2>
-                            <div onclick="togglePopup(this.id)" id="AEB">Read More</div>
+                            <h4>It's a shayari competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="AEB">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/shoutout/andaaz-e-bayaan.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/shoutout/tale-teller.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Tale Teller</h2>
-                            <div onclick="togglePopup(this.id)" id="TT">Read More</div>
+                            <h4>It's a story-telling competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="TT">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/shoutout/tale-teller.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/shoutout/comiking.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>ComiKing</h2>
-                            <div onclick="togglePopup(this.id)" id="KK">Read More</div>
+                            <h4>It's a stand-up comedy competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="KK">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/shoutout/comiking.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/shoutout/versatile.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Verse-A-tile</h2>
-                            <div onclick="togglePopup(this.id)" id="VA">Read More</div>
+                            <h4>It's a poetry competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="VA">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/shoutout/versatile.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                     <div class="card" data-aos="zoom-in">
-                        <div class="cardContent">
-                            <img src="images/shoutout/anecdote.png" alt="">
+                        <div class="cardBack card__side">
                             <h2>Anecdote</h2>
-                            <div onclick="togglePopup(this.id)" id="AD">Read More</div>
+                            <h4>It's a creative writing competition</h4>
+                            <div class="btn btn-1" onclick="togglePopup(this.id)" id="AD">
+                                <svg>
+                                    <rect x="0" y="0" fill="none" width="100%" height="100%" />
+                                </svg>
+                                Read More
+                            </div>
+                        </div>
+                        <div class="cardFront card__side"
+                            style="background: url(./images/shoutout/anecdote.png); background-size: contain; background-repeat: no-repeat; background-position: center center;">
                         </div>
                     </div>
                 </div>
@@ -336,11 +499,15 @@
                     <div class="footSec2">
                         <div class="footTitle2">About Us:</div>
                         <div class="footBody2">
-                            <li>In case of any queries, mail us at - <a href="mailto:secretary.impressions@coep.ac.in" style="margin-left: 50px;">secretary.impressions@coep.ac.in</a></li>
+                            <li>In case of any queries, mail us at - <a href="mailto:secretary.impressions@coep.ac.in"
+                                    style="margin-left: 50px;">secretary.impressions@coep.ac.in</a></li>
                             <li style="margin-top: 12px;">Contact -
-                            <li class="noBullets" style="margin-top: 8px;">Parva Shah (Events Head) - <br/> +91 8128152401</li>
-                            <li class="noBullets" style="margin-top: 5px;">Asmi Sathe (Events Head) - <br/> +91 7666144658</li>
-                            <li class="noBullets" style="margin-top: 5px;">Aryan Maria (Events Head) - <br/> +91 9766260001</li>
+                            <li class="noBullets" style="margin-top: 8px;">Parva Shah (Events Head) - <br /> +91
+                                8128152401</li>
+                            <li class="noBullets" style="margin-top: 5px;">Asmi Sathe (Events Head) - <br /> +91
+                                7666144658</li>
+                            <li class="noBullets" style="margin-top: 5px;">Aryan Maria (Events Head) - <br /> +91
+                                9766260001</li>
                             </li>
                         </div>
                     </div>

@@ -1,4 +1,6 @@
 function togglePopup(id) {
+    var blur = document.getElementById('blur0');
+    blur.classList.toggle('active');
     var blur = document.getElementById('blur1');
     blur.classList.toggle('active');
     var blur = document.getElementById('blur2');
