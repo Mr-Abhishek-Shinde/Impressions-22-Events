@@ -4,9 +4,9 @@ const slider = document.querySelector(".slider")
 const trail = document.querySelector(".trail").querySelectorAll("div")
 
 // Transform value
-let value = 25
+let value = 0
 // trail index number
-let trailValue = 25
+let trailValue = 0
 // interval (Duration)
 let interval = 600000
 
@@ -68,7 +68,7 @@ const trailUpdate = () => {
         trailValue = 1
     } else if (value === 50) {
         trailValue = 2
-    } else{
+    } else if (value===75){
         trailValue = 3
     }
 }   

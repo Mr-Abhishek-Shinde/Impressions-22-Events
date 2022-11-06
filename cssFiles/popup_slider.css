@@ -439,11 +439,31 @@
     margin-bottom: 12px;
 }
 
+.slider #EveContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider .details h3{
+    width: max-content;
+    font-size: 24px;
+    font-family: 'ADAM';
+    margin: 0px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid rgb(136, 135, 135);
+}
+
 .slider .details h4{
     width: max-content;
     font-size: 20px;
     border-bottom: 2px solid rgb(136, 135, 135);
     margin-bottom: 5px;
+}
+
+.slider .details h5{
+    width: max-content;
+    font-size: 18px;
 }
 
 .slider .details li{
