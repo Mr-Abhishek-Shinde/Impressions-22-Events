@@ -293,7 +293,7 @@ h1.titleText {
     top: 50%;
     visibility: visible;
     opacity: 1;
-    transition: 1s;
+    transition: all 0.8s ease;
 }
 
 #popup a {
