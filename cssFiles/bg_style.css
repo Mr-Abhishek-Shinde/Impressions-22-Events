@@ -86,8 +86,9 @@ h1.titleText {
     /* position: absolute; */
     font-family: 'ADAM';
     font-size: 70px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     line-height: 75px;
+    font-weight: 600;
     /* background: url('https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg'); */
     /* background: url(../images/Page4.svg); */
     /* background-size: auto 200%; */
@@ -465,8 +466,8 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #140452;
-    border: 1px solid #2d19a0;
+    background-color: #0f0539;
+    border: 1px solid #251291;
 }
 
 /* footer */
@@ -494,11 +495,11 @@ body::-webkit-scrollbar-thumb {
 
 .footSec1,
 .footSec2 {
-    width: 45%;
+    width: 100%;
 }
 
 .footTitle1 img {
-    max-width: 50%;
+    max-width: 30%;
     max-height: 20%;
     object-fit: contain;
     cursor: pointer;
@@ -545,18 +546,16 @@ p.lastLine {
     margin-left: 50px;
 }
 
+.footTitle2 {
+    margin-top: 35px;
+}
+
 .footBody2 a{
     text-decoration: none;
     color: rgb(141, 193, 238);
 }
 
 @media (max-width: 1200px) {
-
-    .footSec1,
-    .footSec2 {
-        width: 45%;
-    }
-
     .footContainer {
         padding: 22px 30px;
     }
@@ -580,12 +579,6 @@ p.lastLine {
 }
 
 @media (max-width: 745px) {
-
-    .footSec1,
-    .footSec2 {
-        width: 45%;
-    }
-
     .footSec1 {
         margin-right: 0px;
     }
@@ -605,10 +598,6 @@ p.lastLine {
     .footBody3 img {
         width: 30px;
     }
-
-    /* .footTitle1 {
-        font-size: 35px;
-    } */
 
     .footTitle2,
     .footTitle3 {
@@ -632,6 +621,12 @@ p.lastLine {
     .footSec2 {
         width: 95%;
         margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 475px) {
+    .noBullets span{
+        display: block;
     }
 }
 
