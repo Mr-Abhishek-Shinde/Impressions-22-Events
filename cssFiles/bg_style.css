@@ -457,14 +457,10 @@ h1.titleText {
     }
 }
 
-@media (max-height: 750px) {
-    .leftContainer ul {
-        margin-top: 30px;
-    }
-    
+@media (max-height: 750px) {  
     .leftContainer ul li {
         font-size: 30px;
-        margin: 9px 2px;
+        margin: 8px 2px;
     }
 }
 
