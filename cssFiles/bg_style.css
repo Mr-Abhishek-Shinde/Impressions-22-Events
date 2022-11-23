@@ -34,6 +34,16 @@ body {
     background-position: center center;
 }
 
+canvas{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -999;
+}
+
 /* #holder {
     position: fixed;
     top: 0;
