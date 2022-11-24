@@ -6,18 +6,23 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Impressions is a Cultural Festival of College of Engineering, Pune.">
-<meta name="keywords" content="impressions 22, impressions, Impressions, Impression, cultural fest, coep impressions, coep, pune, engineering, COEP, coep tech">
+<meta name="keywords"
+    content="impressions 22, impressions, Impressions, Impression, cultural fest, coep impressions, coep, pune, engineering, COEP, coep tech">
 <script src="jsFiles/jq.js"></script>
 <title>Events | Impressions'22 | COEP Tech</title>
 <link rel="icon" href="images/icon_impressions.ico" type="image/x-icon">
+<link rel="stylesheet" href="cssFiles/navbar.css">
 <link rel="stylesheet" href="cssFiles/preloader.css">
 <link rel="stylesheet" href="cssFiles/bg_style.css">
 <link rel="stylesheet" href="cssFiles/goToTop.css">
 <link rel="stylesheet" href="cssFiles/popup_slider.css">
+<link rel="stylesheet" href="images/font-awesome-4.7.0/css/font-awesome.min.css">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </html>
+
 <body onclick="">
+    <!-- preloader -->
     <div id="holder"></div>
     <div id="preloadLeft" class="hiding hide">
         <div class="backdrop"></div>
@@ -38,6 +43,40 @@
         })
     </script>
 
+    <!-- navbar -->
+    <div class="barsContainer">
+        <img class="bars" src="images/icons8-menu-100.png" alt=""  onclick="showHidemnbar()" id="barsIcon">
+    </div>
+
+    <nav class="mainNav" id="mainNavbar">
+        <ul>
+            <li><a href="https://www.impressionscoeptech.com/" class="mainNavItem">Home</a></li>
+        </ul>
+        <ul class="social-icons">
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/impressionsCOEP/">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/impressions_coep/">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/coepimpressions">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/coepimpressions">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- main content -->
     <main>
         <div class="twoLogos">
             <img src="images/coep and foot logo.png" alt="">
@@ -515,11 +554,14 @@
                                     href="mailto:secretary.impressions@coep.ac.in">secretary.impressions@coep.ac.in</a>
                             </li>
                             <li style="margin-top: 12px;">Contact -
-                            <li class="noBullets" style="margin-top: 8px;"><span>Parva Shah (Events and Proshows Head) - </span> +91
+                            <li class="noBullets" style="margin-top: 8px;"><span>Parva Shah (Events and Proshows Head) -
+                                </span> +91
                                 8128152401</li>
-                            <li class="noBullets" style="margin-top: 5px;"><span>Asmi Sathe (Events and Proshows Head) - </span> +91
+                            <li class="noBullets" style="margin-top: 5px;"><span>Asmi Sathe (Events and Proshows Head) -
+                                </span> +91
                                 7666144658</li>
-                            <li class="noBullets" style="margin-top: 5px;"><span>Aryan Maria (Events and Proshows Head) - </span> +91
+                            <li class="noBullets" style="margin-top: 5px;"><span>Aryan Maria (Events and Proshows Head)
+                                    - </span> +91
                                 9766260001</li>
                             </li>
                         </div>
@@ -652,7 +694,7 @@
                 ratione vero libero temporibus expedita reprehenderit?</p>
             <a href="#">Register</a>
         </div> -->
-        
+
     </main>
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
@@ -663,15 +705,16 @@
         AOS.init();
     </script>
 
-<canvas>
-    <script src="bgScript/three.js"></script>
-    <script src = "bgScript/script.js"></script>
-</canvas>
+    <canvas>
+        <script src="bgScript/three.js"></script>
+        <script src="bgScript/script.js"></script>
+    </canvas>
 
-<script src="jsFiles/poppup.js"></script>
-<script src="jsFiles/scrolup.js"></script>
-<script src="jsFiles/navBar.js"></script>
-<script src="jsFiles/slider.js"></script>
+    <script src="jsFiles/poppup.js"></script>
+    <script src="jsFiles/scrolup.js"></script>
+    <script src="jsFiles/navBar.js"></script>
+    <script src="jsFiles/mainNavbar.js"></script>
+    <script src="jsFiles/slider.js"></script>
 
 </body>
 
