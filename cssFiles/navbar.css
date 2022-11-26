@@ -138,7 +138,11 @@
     /* -webkit-transform: scale(2.2); */
     color: #00B5F5;
     background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     transition: all 265ms ease-in;
+}
+
+#barsIcon.active{
+    visibility: hidden;
 }
